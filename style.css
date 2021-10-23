@@ -37,6 +37,10 @@ main {
   color: var(--gray);
 }
 
+.seloRocketseat img {
+  animation: spin 10s linear infinite;
+}
+
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
@@ -83,4 +87,14 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
