@@ -52,5 +52,14 @@
   </main>
 
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector("main"), {
+      reverse: true,
+      max: 3,
+      scale: 1.1,
+      speed: 500
+    });
+  </script>
 </body>
 </html>
