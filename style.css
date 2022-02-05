@@ -23,7 +23,7 @@ body {
 main {
   background: url('img/background.svg');
   width: 375px;
-  height: 812px;
+  height: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 75px -2px rgba(0,0,0,0.65);
   -moz-box-shadow: 2px 2px 75px -2px rgba(0,0,0,0.65);
@@ -81,12 +81,29 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 2rem;
   list-style: none;
   padding: 0;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+@media (max-width: 768px){
+  main{
+    max-width: 95%;
+    height: 96%;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  ul{
+    margin-top: 1rem;
+  }
 }
 
 
