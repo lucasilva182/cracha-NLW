@@ -1,9 +1,8 @@
 const linksSocialMedias = {
-   github: "lucasilva182",
-   youtube: "lucassilva182",
-   facebook: "lucas.silva18222",
-   instagram: "lucasdasilva182",
-   twitter: "lucasdasilva182"
+  github: "lucasilva182",
+  facebook: "lucas.silva18222",
+  instagram: "lucasdasilva182",
+  twitter: "lucasdasilva182"
 }
 
 function changeSocialMediasLinks() {
@@ -21,15 +20,15 @@ changeSocialMediasLinks()
 function getGithubProfileInfos() {
   const url = `https://api.github.com/users/${linksSocialMedias.github}`
 
-  fetch(url)   
-  .then(response => response.json()) 
-  .then(data => {
-    userName.textContent = data.name
-    userBio.textContent = data.bio
-    userLink.href = data.html_url
-    userImg.src = data.avatar_url
-    userLogin.textContent = data.login
-  })
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+      userLink.href = data.html_url
+      userImg.src = data.avatar_url
+      userLogin.textContent = data.login
+    })
 }
 
 getGithubProfileInfos()

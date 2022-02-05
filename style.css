@@ -90,6 +90,7 @@ ul {
   justify-content: center;
 }
 
+
 @media (max-width: 768px){
   main{
     max-width: 95%;
